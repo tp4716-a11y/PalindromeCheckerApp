@@ -32,4 +32,3 @@ Acts as a container for the Palindrome Checker application logic.
 Entry point of the Java application.
 
 ```java
-public static void main(String[] args)
