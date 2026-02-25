@@ -5,24 +5,30 @@
 
 public class PalindromeCheckerApp {
 
-    // Application constants
-    static final String APP_NAME = "Palindrome Checker Application";
-    static final String VERSION = "Version 1.0";
+    /*
+     * UseCase2: Print a Hardcoded Palindrome Result
+     */
 
-    // Main Method - Entry point of the application
-    public static void main(String[] args) {
 
-        // Display Welcome Message
-        System.out.println("=======================================");
-        System.out.println("      Welcome to " + APP_NAME);
-        System.out.println("              " + VERSION);
-        System.out.println("=======================================");
+        public static void main(String[] args) {
 
-        // Application flow continues
-        System.out.println("Application started successfully.");
-        System.out.println("Proceeding to next use case...");
+            // Hardcoded string (String Literal)
+            String word = "madam";
 
-        // For UC1, program ends here
-        System.out.println("Thank you for using the application.");
-    }
+            // Reverse the string
+            String reversed = "";
+
+            for (int i = word.length() - 1; i >= 0; i--) {
+                reversed = reversed + word.charAt(i);
+            }
+
+            // Check if palindrome using conditional statement
+            if (word.equals(reversed)) {
+                System.out.println("The word \"" + word + "\" is a Palindrome.");
+            } else {
+                System.out.println("The word \"" + word + "\" is NOT a Palindrome.");
+            }
+
+            System.out.println("Program executed successfully.");
+        }
 }
